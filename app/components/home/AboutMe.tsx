@@ -42,7 +42,7 @@ export default function AboutMe() {
 
               <div className="relative rounded-[40px] overflow-hidden border border-white/10">
                 <Image
-                  src="/images/about-robin.jpg"
+                  src="/images/robinabout.png"
                   alt="Robin Sharma"
                   width={800}
                   height={1000}

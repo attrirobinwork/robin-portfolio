@@ -10,7 +10,7 @@ const experiences = [
     title: "Senior UI/UX Designer & Frontend Developer",
     company: "Nestormind Pvt. Ltd.",
     website: "https://nestormind.com",
-    logo: "/logos/nestormind.png",
+    logo: "/images/logos/nestormind_logo.jpeg",
     location: "Mohali, Punjab",
     description:
       "Leading UI/UX strategy and frontend development for ERP, HRMS, Logistics, Healthcare, Pharma, and SaaS platforms. Designing scalable workflows, design systems, dashboards, and modern enterprise applications.",
@@ -30,7 +30,7 @@ const experiences = [
     title: "UI/UX Designer",
     company: "Rex Web Solutions",
     website: "#",
-    logo: "/logos/rex.png",
+    logo: "/images/logos/rexweb_solutions_logo.jpeg",
     location: "Mohali, Punjab",
     description:
       "Designed responsive web and mobile applications, user flows, wireframes, prototypes, and collaborated closely with developers to deliver intuitive digital experiences.",
@@ -48,7 +48,7 @@ const experiences = [
     title: "Junior UI/UX Designer",
     company: "Sensation Software Solutions",
     website: "https://sensationsolutions.com/",
-    logo: "/logos/sensation.png",
+    logo: "/images/logos/ss.jpeg",
     location: "Mohali, Punjab",
     description:
       "Worked on UI design, wireframes, and interactive prototypes while learning user-centered design methodologies and product thinking.",
@@ -65,7 +65,7 @@ const experiences = [
     title: "Graphic & Web Designer",
     company: "Rex Web Solutions",
     website: "#",
-    logo: "/logos/rex.png",
+    logo: "/images/logos/rexweb_solutions_logo.jpeg",
     location: "Mohali, Punjab",
     description:
       "Created website layouts, branding materials, landing pages, banners, and marketing creatives for various industries.",
@@ -82,7 +82,7 @@ const experiences = [
     title: "Desktop Services Specialist",
     company: "HCL Technologies",
     website: "https://www.hcltech.com",
-    logo: "/logos/hcl.png",
+    logo: "/images/logos/hcltech_logo.jpeg",
     location: "Chandigarh",
     description:
       "Provided enterprise IT support, troubleshooting hardware, software, networking, and infrastructure-related issues for corporate clients.",
