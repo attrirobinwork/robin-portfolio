@@ -1,64 +1,149 @@
 "use client";
 
+import Image from "next/image";
 import { motion } from "framer-motion";
+import { ArrowRight, Download } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center bg-[#0A0A0A] overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-cyan-600/10" />
+    <section className="relative min-h-screen bg-black overflow-hidden">
 
-      <div className="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-12 items-center">
+      {/* Background Glow */}
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: .8 }}
-        >
-          <p className="text-blue-400 mb-4">
-            Senior Product Designer
-          </p>
+      <div className="absolute top-0 left-0 w-[500px] h-[500px] bg-blue-600/10 blur-[150px]" />
 
-          <h1 className="text-5xl lg:text-7xl font-bold text-white leading-tight">
-            Designing
-            <span className="block bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              Enterprise ERP
+      <div className="absolute bottom-0 right-0 w-[500px] h-[500px] bg-purple-600/10 blur-[150px]" />
+
+      <div className="max-w-7xl mx-auto px-6 lg:px-10 min-h-screen flex items-center">
+
+        <div className="grid lg:grid-cols-2 gap-20 items-center w-full">
+
+          {/* Left Content */}
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: .8 }}
+          >
+            <span className="inline-flex px-4 py-2 rounded-full border border-blue-500/20 bg-blue-500/10 text-blue-400 text-sm">
+              Senior Product Designer & Frontend Developer
             </span>
-            Experiences
-          </h1>
 
-          <p className="mt-6 text-gray-400 text-lg max-w-xl">
-            UI/UX Designer with 9+ years of experience building ERP,
-            HRMS, Healthcare, Logistics and SaaS products.
-          </p>
+            <h1 className="mt-8 text-6xl md:text-[48px] lg:text-[56px] font-bold text-white leading-[0.95]">
+              Building
+              <br />
+              Digital Products
+              <br />
+              Since 2017
+            </h1>
 
-          <div className="flex gap-4 mt-8">
-            <button className="px-6 py-3 bg-blue-600 rounded-xl text-white">
-              View Projects
-            </button>
+            <p className="mt-8 text-xl text-gray-300 max-w-xl leading-relaxed">
+              Hi, I'm Robin Sharma.
+            </p>
 
-            <button className="px-6 py-3 border border-gray-700 rounded-xl text-white">
-              Download Resume
-            </button>
-          </div>
-        </motion.div>
+            <p className="mt-4 text-gray-400 max-w-xl leading-relaxed">
+              I design and build enterprise products across ERP,
+              HRMS, Logistics, Healthcare, Pharma and SaaS domains,
+              combining UX strategy with modern frontend development.
+            </p>
 
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-        >
-          <div className="relative">
-            <div className="rounded-3xl bg-gradient-to-r from-blue-600 to-purple-600 p-[1px]">
-              <div className="bg-[#111111] rounded-3xl p-8">
-                <img
-                  src="/images/profile.png"
+            <div className="flex flex-wrap gap-4 mt-10">
+
+              <button className="px-6 py-4 rounded-2xl bg-white text-black font-medium flex items-center gap-2">
+                View Projects
+                <ArrowRight size={18} />
+              </button>
+
+              <button className="px-6 py-4 rounded-2xl border border-white/10 text-white flex items-center gap-2">
+                Resume
+                <Download size={18} />
+              </button>
+
+            </div>
+
+            {/* Stats */}
+
+            <div className="flex flex-wrap gap-8 mt-14">
+
+              <div>
+                <h3 className="text-3xl font-bold text-white">
+                  9+
+                </h3>
+                <p className="text-gray-500">
+                  Years Experience
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-3xl font-bold text-white">
+                  50+
+                </h3>
+                <p className="text-gray-500">
+                  Projects Delivered
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-3xl font-bold text-white">
+                  7+
+                </h3>
+                <p className="text-gray-500">
+                  Industries
+                </p>
+              </div>
+
+            </div>
+
+          </motion.div>
+
+          {/* Right Side */}
+
+          <motion.div
+            initial={{ opacity: 0, scale: .9 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+            className="relative"
+          >
+
+            <div className="relative">
+
+              <div className="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 blur-[120px] opacity-20" />
+
+              <div className="relative rounded-[40px] overflow-hidden border border-white/10">
+                <Image
+                  src="/images/robin.png"
                   alt="Robin Sharma"
-                  className="rounded-2xl"
+                  width={800}
+                  height={1000}
+                  className="w-full h-auto object-cover"
                 />
               </div>
+
             </div>
-          </div>
-        </motion.div>
+
+            {/* Floating Badges */}
+
+            <div className="absolute top-10 -left-10 px-4 py-3 rounded-2xl bg-[#111111] border border-white/10">
+              <p className="text-white text-sm">
+                ERP Specialist
+              </p>
+            </div>
+
+            <div className="absolute bottom-20 -left-8 px-4 py-3 rounded-2xl bg-[#111111] border border-white/10">
+              <p className="text-white text-sm">
+                React & Next.js
+              </p>
+            </div>
+
+            <div className="absolute top-1/2 -right-10 px-4 py-3 rounded-2xl bg-[#111111] border border-white/10">
+              <p className="text-white text-sm">
+                Design Systems
+              </p>
+            </div>
+
+          </motion.div>
+
+        </div>
 
       </div>
     </section>
